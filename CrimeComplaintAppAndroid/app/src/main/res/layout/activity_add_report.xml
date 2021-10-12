@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Public_user.AddReport">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/appbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorSecondaryVariant"
+            android:elevation="4dp"
+            android:theme="@style/Theme.Online_Crime_Reporting_App"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:id="@+id/appbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Complaint Form"
+                android:fontFamily="@font/mroboto"
+                android:textColor="@color/b_2"
+                android:textSize="20sp"
+               />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar2"
+        android:layout_alignParentStart="true"
+        android:background="#E3F3F6"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="#E3F3F6"
+            android:orientation="vertical"
+            android:paddingBottom="90dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFEB3B"
+                app:cardCornerRadius="4dp"
+                app:contentPadding="10dp"
+                app:strokeColor="#FFEB3B"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:id="@+id/txt_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder: This online crime report is limited and only intended for property crimes such as(burglary, larceny, theft, motor vehicle theft, arson, shoplifting, and vandalism.) other crime category will be invalid."
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note : Write N/A if you don't have answer!"
+                android:textSize="16sp"
+                android:textColor="#373636"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:background="#8FC8FD"
+                android:padding="6dp"
+                android:gravity="center"
+                />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:contentPadding="10dp"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/txt_q0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Victims/Witness Info"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                       />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"
+                        android:text="First Name" />
+
+                    <EditText
+                        android:id="@+id/edt_witnessName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="6dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="Last Name" />
+
+                    <EditText
+                        android:id="@+id/edt_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="6dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="Phone No." />
+
+                    <EditText
+                        android:id="@+id/edt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="6dp"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="Email" />
+
+                    <EditText
+                        android:id="@+id/edt_victimsEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="6dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:contentPadding="20dp">
+
+                <TextView
+                    android:id="@+id/txt_q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What has happened?"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edt_q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:contentPadding="20dp">
+
+                <TextView
+                    android:id="@+id/txt_q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How the act was commited?"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edt_q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Accurate time and location of the crime?"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+
+                   <com.google.android.material.card.MaterialCardView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       app:strokeWidth="1dp"
+                       app:strokeColor="#7E7C7C"
+                       app:cardCornerRadius="4dp"
+                       android:layout_marginTop="15dp"
+                       android:padding="5dp"
+                       >
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="start"
+                           android:padding="5dp"
+                           android:orientation="horizontal">
+
+                           <Button
+                               android:id="@+id/btn_timePicker"
+                               android:layout_width="80dp"
+                               android:layout_height="wrap_content"
+                               android:backgroundTint="@color/white"
+                               android:padding="0dp"
+                               android:text="Pick Date"
+                               android:textAllCaps="false"
+                               android:textSize="14sp" />
+
+                           <TextView
+                               android:id="@+id/tv_textTime"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/black"
+                               android:layout_gravity="center_vertical"
+                               android:layout_marginStart="3dp"
+                               tools:text="@tools:sample/date/ddmmyy" />
+
+                       </LinearLayout>
+                   </com.google.android.material.card.MaterialCardView>
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16sp"
+                        android:text="Location" />
+
+                    <EditText
+                        android:id="@+id/edt_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_background"
+                        android:padding="6dp"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="20dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Do you know the offender?"
+                        android:textSize="18sp"
+                        android:textColor="@color/black" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start">
+                        <RadioButton
+                            android:id="@+id/rd_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:layout_marginStart="30dp"
+                            android:id="@+id/rd_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <LinearLayout
+                        android:id="@+id/linearMain2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_ofName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Perpetrator"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_offender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_background"
+                            android:padding="6dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_ofAd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Address"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_background"
+                            android:padding="6dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_ofRelation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Relations to the offender"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_relation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_background"
+                            android:padding="6dp"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/linearMain"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:id="@+id/txt_offenderDescription"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:text="Description of the offender"
+                           android:textColor="@color/black"
+                           android:textSize="18sp"
+                           android:fontFamily="sans-serif-thin"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/txt_age"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:text="Age"
+                           android:textSize="16sp" />
+                       <Spinner
+                           android:padding="6dp"
+                           android:id="@+id/spinnerAge"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/edittext_background"
+                           android:layout_marginTop="5dp" />
+
+                       <TextView
+                           android:id="@+id/txt_height"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:text="Height"
+                           android:textSize="16sp" />
+
+                       <Spinner
+                           android:padding="6dp"
+                           android:background="@drawable/edittext_background"
+                           android:id="@+id/spinnerHeight"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="5dp" />
+
+                       <TextView
+                           android:id="@+id/txt_bodyShape"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:text="Body Shape"
+                           android:textSize="16sp" />
+
+                       <Spinner
+                           android:padding="6dp"
+                           android:background="@drawable/edittext_background"
+                           android:id="@+id/spinnerBodyShape"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="5dp" />
+
+                       <TextView
+                           android:id="@+id/txt_eyesColor"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:text="Color of Eyes"
+                           android:textSize="16sp" />
+                       <EditText
+                           android:id="@+id/edt_eyeColor"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:padding="6dp"
+                           android:textSize="16sp"
+                           android:layout_marginTop="5dp"
+                           android:background="@drawable/edittext_background"/>
+
+                       <TextView
+                           android:id="@+id/txt_speech"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:text="Speech"
+                           android:textSize="16sp" />
+
+                       <Spinner
+                           android:padding="6dp"
+                           android:background="@drawable/edittext_background"
+                           android:id="@+id/spinnerSpeech"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="5dp" />
+
+                       <TextView
+                           android:id="@+id/txt_movement"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:text="Movement"
+                           android:textSize="16sp" />
+
+                       <EditText
+                           android:id="@+id/edt_movement"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:padding="6dp"
+                           android:textSize="16sp"
+                           android:layout_marginTop="5dp"
+                           android:background="@drawable/edittext_background"/>
+
+                       <TextView
+                           android:id="@+id/txt_clothing"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:text="Clothing"
+                           android:textSize="16sp" />
+
+                       <EditText
+                           android:id="@+id/edt_clothing"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:padding="6dp"
+                           android:textSize="16sp"
+                           android:layout_marginTop="5dp"
+                           android:background="@drawable/edittext_background"/>
+                   </LinearLayout>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="20dp">
+
+                <TextView
+                    android:id="@+id/txt_q6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In which direction and how the perpetrator fled the scene?"
+                    android:textSize="18sp"
+                   android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/edt_q6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="20dp">
+
+                <TextView
+                    android:id="@+id/txt_q7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="If the perpetrator had vehicle write the registration number, type of vehicle and color."
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/edt_q7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_q8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dangerousness of the Perpetrator"
+                        android:textSize="18sp"
+                        android:textColor="@color/black" />
+
+                    <Spinner
+                        android:padding="6dp"
+                        android:background="@drawable/edittext_background"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/spinnerDangerousness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="20dp">
+
+                <TextView
+                    android:id="@+id/txt_q9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Any evidence that you have in your possession?"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/edt_q9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0C678F"
+        android:padding="8dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/mroboto"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

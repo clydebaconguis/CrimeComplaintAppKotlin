@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Crime Report</string>
+    <string name="report">Report</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string-array name="Age">
+        <item>N/A</item>
+        <item>18 below</item>
+        <item>19 to 22</item>
+        <item>23 to 26</item>
+        <item>27 to 30</item>
+        <item>31 to 34</item>
+        <item>35 to 38</item>
+        <item>39 to 42</item>
+        <item>35 to 38</item>
+        <item>39 to 42</item>
+        <item>43 to 50</item>
+        <item>51 to 60</item>
+        <item>61 to 70</item>
+    </string-array>
+
+    <string-array name="Height">
+        <item>N/A</item>
+        <item>5ft below</item>
+        <item>5ft 1 to 5ft 4</item>
+        <item>5ft 5 to 5ft 8</item>
+        <item>5ft 9 to 5ft 12</item>
+        <item>6ft above</item>
+    </string-array>
+
+    <string-array name="BodyShape">
+        <item>N/A</item>
+        <item>Triangle </item>
+        <item>Inverted Triangle</item>
+        <item>Rectangle</item>
+        <item>Oval</item>
+        <item>Trapezoid</item>
+    </string-array>
+
+    <string-array name="Speech">
+        <item>N/A</item>
+        <item>bass </item>
+        <item>baritone</item>
+        <item>tenor</item>
+        <item>countertenor</item>
+        <item>Trapezoid</item>
+        <item>alto</item>
+        <item> contralto</item>
+        <item>mezzo-soprano </item>
+        <item>soprano</item>
+    </string-array>
+
+    <string-array name="Dangerousness">
+        <item>N/A</item>
+        <item>Naka drugs</item>
+        <item>buang og utok</item>
+        <item>hubog ang animal</item>
+        <item>deadly weapons</item>
+        <item>trashtalkers</item>
+    </string-array>
+
+</resources>
